@@ -14,7 +14,7 @@ FPS = 60
 TIMELINE_DURATION = 30
 
 # Server related stuff
-OFFLINE_MODE = False
+OFFLINE_MODE = True
 HOST_ADDRESS = "169.254.90.8" #Laptop : "192.168.1.97" RPi: "169.254.90.8"
 PORT = 54231
 
