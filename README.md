@@ -4,6 +4,13 @@ Provides a GUI (using pygame) to interact with a programmable LED strip.
 The controller/remote must be running on a powerful enough machine to run PyGame.
 The reciever must be running on a RaspberryPi.
 
+# How to set up
+To run the control panel, run "main.py" on a machine with pygame.
+    This file will display a control panel to animate the LED Strip 
+
+"reciever.py" must be run on the RaspberryPi.
+Make sure "OFFLINE_MODE" is set to true and the "HOST_ADDRESS" is set to the IP of the RaspberryPi
+
 ## Controls
 - F1 : Creates a "single pixel" node
 - F2 : Creates a "fill" node
