@@ -20,4 +20,4 @@ PORT = 54231
 
 # External files
 SAVE_FILE_NAME = "nodes.json" # This is the file name saved when "s" is presssed
-LOAD_FILE_NAME = "nodes.json" # This file is loaded when the program is opened
+LOAD_FILE_NAME = "circling-gradient.json" # This file is loaded when the program is opened

@@ -525,6 +525,9 @@ class TimelineEditor(Layer):
             if _node_pos.x < self.timeline_iterator.get_pos().x < _node_pos.x + node.size.x:
                 self.activated_nodes.append(node)
                 self.node_activation_queue.enqueue(node, node.get_pos().y)
+                # print("detecting:", node.get_tags())
+
+                if node.has_tag("terminate"): self.reset()
 
 
         #Get all transitions currently within range of the iterator
@@ -549,6 +552,7 @@ class TimelineEditor(Layer):
         _transitions.clear()
 
         for node in self.node_activation_queue.dequeue_iterator():
+            # print("activating:", node.get_tags())
             node.strip_interact()
 
         #Node placement

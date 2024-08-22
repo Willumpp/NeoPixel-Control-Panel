@@ -368,6 +368,7 @@ class TerminateNode(Node):
         self.add_tag("terminate")
 
     def strip_interact(self):
+        print("terminate node activated")
         self.timeline_ui.reset()
 
 class StartNode(Node):
